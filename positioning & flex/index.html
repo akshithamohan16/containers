@@ -1,0 +1,97 @@
+<html>
+<head>
+    	<meta charset="UTF-8">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+    <title> positioning & flex </title>
+<style>
+    .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap-reverse;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+    }
+    img {
+        width: 400px;
+        height: 300px;
+    }
+    .flex-item{
+        order: 2;
+        flex-grow: 2;
+        flex-shrink: 2;
+    }
+.container
+{
+    position: relative;
+    background-image:url(download.png);
+    width:  50px;
+    height: 50px;
+    border: 2px solid pink;
+    margin: 20px;
+    
+}
+.static-element
+{
+    width: 50px;
+    height: 50px;
+    right: 50px;
+    top: 50px;
+    background-image: url(icons8-love-48.png);
+    
+}
+.relative-element
+{
+   position: relative;
+    top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(icons8-love-48.png);
+}
+.absolute-element
+{
+    position: absolute;
+     top: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(icons8-love-48.png);
+    
+}
+.fixed-element
+{
+    position: fixed;
+     top: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    background-image: url(icons8-love-48.png);
+}
+    
+</style>
+</head>
+<body>
+    <header>  
+        <font face="Comic sans MS" size="6">
+        <h1> A Glimpse Of Pre-Wedding </h1>
+        </font> </header>
+    <div class="main">
+        <img src="DSC_2454--1.jpg">
+             <img src="DSC_4757.JPG">
+        <img src="DSC_4962.JPG">
+    </div>
+<div class="container">
+<div class="static-element">.#1</div>
+</div>
+<div class="container">
+<div class="relative-element">.#2</div>
+</div>
+<div class="container">
+<div class="absolute-element">.#3</div>
+</div>
+<div class="container">
+<div class="fixed-element">Scroll </div>
+        </div>
+    </body></html>
